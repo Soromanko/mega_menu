@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 20px;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.megamenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    width: 100vw;
+    opacity: 0;
+    visibility: hidden;
+    height: auto;
+    box-shadow: 0px 10px 2px 3px lightblue;
+    left: 1px;
+}
+
+nav > ul > li:hover .megamenu {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+}
+
+.options {
+    list-style: none;
+}
